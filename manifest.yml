@@ -1,0 +1,8 @@
+---
+applications:
+ - name: watermarkdemo
+   memory: 1G
+   path: build/libs/watermarkdemo-0.0.1-SNAPSHOT.jar
+   env:
+     JAVA_OPTS: -Djava.library.path=$PWD/BOOT-INF/classes/native
+   buildpack: https://github.com/cloudfoundry/java-buildpack.git#v4.5
